@@ -2,7 +2,7 @@
 First JS repo made for playing rock-paper-sissors - currently working on the game UI.
 
 # Update 12-16-2025
-Long time no see, came back to clean my code and start working on its UI. Fixed the main PlayRound() function and currently working on resetGame().
+Long time no see, came back to clean my code and start working on its UI. Fixed the main PlayRound() function and included the function resetGame().
 
 # Update 07-30-2024
 After some editings on the code, I decided to try doing it differently than Odin Projects curriculum would suggest. Odin suggested to do different functions for rounds and for the game completely, however, I had a hard time making it work like that. 
