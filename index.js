@@ -16,7 +16,7 @@ function playRound(humanChoice) {
     const computerChoice = computerOptions[Math.floor(Math.random() * 3)];
     let result = "";
     if (humanChoice === computerChoice) {
-        result = "It's a tie! Try again."
+    console.log("It's a tie! Try again.");
     } else if ((humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "rock")) {
         console.log("You won! " + humanChoice + " beats " + computerChoice);
         humanScore++;
@@ -26,10 +26,19 @@ function playRound(humanChoice) {
     } if (humanScore === 5 && computerScore < 5) {
         console.log("Congratulations! You won!");
         alert("Play again?");
-        window.location.reload();
+        resetGame();
+        return;
     } else if (humanScore < 5 && computerScore === 5) {
         console.log("You lost. Try again!");
         alert("Play again?");
-        window.location.reload();
+        resetGame();
+        return;
     } console.log("Current score: You: " + humanScore + " Computer: " + computerScore);
 }
+
+function resetGame() {
+    humanScore = 0;
+    computerScore = 0;
+}
+
+//Anotar shift + win + F amanha pra formatar as indentações
